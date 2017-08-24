@@ -7,64 +7,65 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <div class="main-logo">
           <img src="img/logo.svg" width="140" height="49" alt="Логотип студии «Нёрдс»">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="customers.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="basket-navigation">Корзина</li>
-        </ul>
+        </div>
+        <div class="site-navigation">
+          <a href="studio.html">Студия</a>
+          <a href="customers.html">Клиенты</a>
+          <a href="catalog.html">Магазин</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="basket-navigation">
+          <a href="basket.html">Корзина</a>
+        </div>
       </nav>
+      <div class="slider">
+      <section class="slide slide1">
+          <h2 class="slogan"><b>Дорого, долго, <br>скурпулезно.</b></h2>
+          <p class="slogan-description">Математически выверенный дизайн
+             для вашего сайта или мобильного приложения.</p>
+          <p><a href="#" class="btn btn-get-more">Узнать больше</a></p>
+          <p><img src="img/slide1.png" width="698" height="413"></p> <!-- или фон-->
+      </section>
+
+      <section class="slide slide2">
+          <h2 class="slogan"><b>Любим математику <br>как никто другой</b></h2>
+          <p class="slogan-description">Никакого креатива, только математические формулы для расчета пропорций.</p>
+          <p><a href="#" class="btn btn-get-more">Узнать больше</a></p>
+          <p><img src="img/slide2.png" width="663" height="430"></p> <!-- или фон-->
+      </section>
+
+      <section class="slide slide3">
+          <h2 class="slogan"><b>Только ночь, <br>только хардкор</b></h2>
+          <p class="slogan-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <p><a href="#" class="btn btn-get-more">Узнать больше</a></p>
+          <p><img src="img/slide3.png" width="759" height="411"></p> <!-- или фон-->
+      </section>
+    </div>
     </header>
+
     <main class="container">
 
       <h1 class="visually-hidden">Студия «Нёрдс»</h1>
-
-        <section class="slide1">
-            <h2 class="slogan"><b>Дорого, долго, <br>скурпулезно.</b></h2>
-            <p class="slogan-description">Математически выверенный дизайн
-               для вашего сайта или мобильного приложения.</p>
-            <p><a href="#" class="btn btn-get-more">Узнать больше</a></p>
-            <p><img src="img/slide1.png" width="698" height="413"></p>
-        </section>
-
-        <section class="slide2">
-            <h2 class="slogan"><b>Любим математику <br>как никто другой</b></h2>
-            <p class="slogan-description">Никакого креатива, только математические формулы для расчета пропорций.</p>
-            <p><a href="#" class="btn btn-get-more">Узнать больше</a></p>
-            <p><img src="img/slide2.png" width="663" height="430"></p>
-        </section>
-
-        <section class="slide3">
-            <h2 class="slogan"><b>Только ночь, <br>только хардкор</b></h2>
-            <p class="slogan-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <p><a href="#" class="btn btn-get-more">Узнать больше</a></p>
-            <p><img src="img/slide3.png" width="759" height="411"></p>
-        </section>
-
         <section class="main-services">
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="services-list">
             <li class="service-item">
               <h3>Веб-сайты</h3>
-              <li><img src="img/illustration-1.jpg" width="300" height="146" alt="Web-Sites"></li>
+              <img src="img/illustration-1.jpg" width="300" height="146" alt="Web-Sites">
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
               <a class="button-web" href="basket.html">Заказать</a>
             </li>
             <li class="service-item">
               <h3>Приложения</h3>
-              <li><img src="img/illustration-2.jpg" width="300" height="146" alt="Apps"></li>
+              <img src="img/illustration-2.jpg" width="300" height="146" alt="Apps">
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
               <a class="button-app" href="basket.html">Заказать</a>
             </li>
             <li class="service-item">
               <h3>Презентации</h3>
-              <li><img src="img/illustration-3.jpg" width="300" height="146" alt="Presentations"></li>
+              <img src="img/illustration-3.jpg" width="300" height="146" alt="Presentations">
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
               <a class="button-presentation" href="basket.html">Заказать</a>
             </li>
@@ -73,6 +74,7 @@
 
         <section class="about-nerds">
           <h2 class="visually-hidden">О студии «Нёрдс»</h2>
+            <div class="left-column">
               <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
               <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как работы.</p>
               <h3>Выполняем заказы на разработку:</h3>
@@ -81,6 +83,8 @@
                 <li>Мобильных приложений для iOS и Android</li>
                 <li>Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
+            </div>
+            <div class="right-column">
               <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип студии «Нёрдс»">
               <h3>С 2004 года любим точность во всем:</h3>
               <table>
@@ -96,6 +100,7 @@
                   <td>Минимальная предоплата</td>
                 </tr>
               </table>
+            </div>
         </section>
         <section class="project-gallery">
             <a href="https://htmlacademy.ru/">
@@ -113,26 +118,49 @@
         </section>
     </main>
     <footer class="main-footer">
-      <section class="contacts">
-        <h3>Nerds Design Studio</h3>
-        <p>
-          191186, Санкт-Петербург,<br>
-          ул.Б.Конюшенная, д.19/8
-        </p>
-        <p>
-          тел. +9(812) 275-75-75
-        </p>
-        <a href="#">Напишите нам</a>
-      </section>
-      <div class="footer-social">
+      <div class="map">
+        <section class="contacts">
+          <h3>Nerds Design Studio</h3>
+          <p>
+            191186, Санкт-Петербург,<br>
+            ул.Б.Конюшенная, д.19/8
+          </p>
+          <p>
+            тел. +9(812) 275-75-75
+          </p>
+          <a href="form.html">Напишите нам</a>
+        </section>
+      </div>
+      <div class="social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="content-info">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
+    <section class="contact-us hidden">
+      <h3 class="visually-hidden">Форма обратной связи</h3>
+      <form method="post" action="/echo">
+        <fieldset>
+          <legend><b>Напишите нам</b></legend>
+          <div class="half-width">
+            <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+            <label for="e-mail">Ваш e-mail:</label>
+              <input type="email" id="e-mail" name="e-mail"placeholder="Для отправки ответа" required>
+          </div>
+          <label for="message">Текст письма:</label><br>
+            <textarea id="message" rows="3">В свободной форме</textarea>
+        </fieldset>
+        <div class="buttons">
+              <input type="submit" value="Отправить">
+        </div>
+      </form>
+  </section>
   </body>
 </html>
