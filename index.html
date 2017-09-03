@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -26,21 +28,21 @@
           <h2 class="slogan"><b>Дорого, долго, <br>скурпулезно.</b></h2>
           <p class="slogan-description">Математически выверенный дизайн
              для вашего сайта или мобильного приложения.</p>
-          <p><a href="#" class="btn btn-get-more">Узнать больше</a></p>
+          <p><a href="#" class="button btn-get-more">Узнать больше</a></p>
           <p><img src="img/slide1.png" width="698" height="413"></p> <!-- или фон-->
       </section>
 
       <section class="slide slide2">
           <h2 class="slogan"><b>Любим математику <br>как никто другой</b></h2>
           <p class="slogan-description">Никакого креатива, только математические формулы для расчета пропорций.</p>
-          <p><a href="#" class="btn btn-get-more">Узнать больше</a></p>
+          <p><a href="#" class="button btn-get-more">Узнать больше</a></p>
           <p><img src="img/slide2.png" width="663" height="430"></p> <!-- или фон-->
       </section>
 
       <section class="slide slide3">
           <h2 class="slogan"><b>Только ночь, <br>только хардкор</b></h2>
           <p class="slogan-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <p><a href="#" class="btn btn-get-more">Узнать больше</a></p>
+          <p><a href="#" class="button btn-get-more">Узнать больше</a></p>
           <p><img src="img/slide3.png" width="759" height="411"></p> <!-- или фон-->
       </section>
     </div>
@@ -76,8 +78,8 @@
         <section class="about-nerds">
           <h2 class="visually-hidden">О студии «Нёрдс»</h2>
             <div class="left-column">
-              <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-              <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как работы.</p>
+              <b>Мы - маленькая, но гордая<br>дизайн-студия из Краснодара.</b>
+              <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
               <h3>Выполняем заказы на разработку:</h3>
               <ul class="servises-details">
                 <li>Веб-сайтов любой сложности</li>
@@ -91,9 +93,9 @@
               <table>
                 <caption class="visually-hidden">Точные данные</caption>
                 <tr>
-                  <td>146<sup>%</sup></td>
-                  <td>100<sup>%</sup></td>
-                  <td>50<sup>%</sup></td>
+                  <td><b>146</b><sup>%</sup></td>
+                  <td><b>100</b><sup>%</sup></td>
+                  <td><b>50</b><sup>%</sup></td>
                 </tr>
                 <tr>
                   <td>Уровень самоотдачи</td>
@@ -129,7 +131,7 @@
           <p>
             тел. +9(812) 275-75-75
           </p>
-          <a href="form.html">Напишите нам</a>
+          <a href="form.html" class="button-write-us">Напишите нам</a>
         </section>
       </div>
       <div class="social">
@@ -158,7 +160,7 @@
           <label for="message">Текст письма:</label><br>
             <textarea id="message" rows="3">В свободной форме</textarea>
         </fieldset>
-        <div class="buttons">
+        <div class="button-send">
               <input type="submit" value="Отправить">
         </div>
         <button class="modal-close" type="button">Закрыть</button>
