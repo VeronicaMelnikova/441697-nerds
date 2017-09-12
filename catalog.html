@@ -36,7 +36,7 @@
         <div class="left-column">
           <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            
+
             <form class="filter" method="get" action="form.php">
               <fieldset>
               <legend>Стоимость:</legend>
@@ -56,7 +56,7 @@
             </fieldset>
             <fieldset>
             <legend>Сетка:</legend>
-              <ul>
+              <ul class="radiobuttons">
                 <li><input class="filter-input filter-input-radio" type="radio" id="adaptive" name="net" value="adaptive">
                   <label for="adaptive">Адаптивная</label>
                 </li>
@@ -70,21 +70,23 @@
             </fieldset>
             <fieldset>
             <legend>Особенности:</legend>
-              <li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" id="slader" name="slader" checked>
-                <label for="slader">Слайдер</label>
-              </li>
-              <li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" id="advantage-block" name="advantage-block" >
-                <label for="advantage-block">Блок преимуществ</label>
-              </li>
-              <li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" id="news" name="news" checked>
-                <label for="news">Новости</label>
-              </li>
-              <li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" id="gallery" name="gallery" >
-                <label for="gallery">Галерея</label>
-              </li>
-              <li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" id="basket" name="basket" >
-                <label for="basket">Корзина</label>
-              </li>
+              <ul class="checkbox">
+                  <li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" id="slader" name="slader" checked>
+                      <label for="slader">Слайдер</label>
+                  </li>
+                  <li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" id="advantage-block" name="advantage-block" >
+                      <label for="advantage-block">Блок преимуществ</label>
+                  </li>
+                  <li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" id="news" name="news" checked>
+                      <label for="news">Новости</label>
+                  </li>
+                  <li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" id="gallery" name="gallery" >
+                    <label for="gallery">Галерея</label>
+                  </li>
+                  <li class="filter-option"><input class="filter-input filter-input-checkbox" type="checkbox" id="basket" name="basket" >
+                    <label for="basket">Корзина</label>
+                  </li>
+              </ul>
             </fieldset>
             <button type="submit" class="filter-button button">Показать</button>
           </form>
@@ -181,7 +183,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="container">
+      <div class="map">
         <section class="contacts">
           <h3>Nerds Design Studio</h3>
           <p>
@@ -193,6 +195,9 @@
           </p>
           <a href="form.html" class="button-write-us">Напишите нам</a>
         </section>
+      </div>
+
+      <div class="container">
         <div class="social">
           <ul>
             <li><a class="social-button" href="#"><img src="img/img-vk.png" width="79" height="79" alt="Вконтакте"></a></li>
