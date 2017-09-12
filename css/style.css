@@ -508,8 +508,9 @@ td {
 }
 
 
-/*.range-filter {
-  width: 240px;
+.range-filter {
+  width: 260px;
+  box-sizing: content-box;
 }
 
 .range-controls {
@@ -559,7 +560,7 @@ td {
   font-size: 0;
 }
 
-.price-controls label {
+.price-controls label:not(.price-label) {
   display: inline-block;
   width: 50%;
   font-size: 16px;
@@ -581,7 +582,7 @@ td {
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
-}*/
+}
 
 
 .filter li{
@@ -610,13 +611,14 @@ td {
   background-color: d5d5d5;
 }
 
-.filters input {
+.filters input[type="checkbox"],
+.filters input[type="radio"] {
   display: none;
 }
-.filters label {
+.filters label:not(.price-label) {
    display: block;
    position: relative;
-   padding-left: ;
+   padding-left: 38px;
  }
 
 

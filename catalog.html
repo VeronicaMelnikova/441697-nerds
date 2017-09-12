@@ -36,7 +36,9 @@
         <div class="left-column">
           <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
+            
             <form class="filter" method="get" action="form.php">
+              <fieldset>
               <legend>Стоимость:</legend>
               <div class="range-filter">
                 <div class="range-controls">
@@ -47,11 +49,11 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                   <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                   <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                   <label class="min-price price-label">от <input name="min-price" type="text" value="0"></label>
+                   <label class="max-price price-label">до <input name="max-price" type="text" value="15000"></label>
                 </div>
               </div>
-
+            </fieldset>
             <fieldset>
             <legend>Сетка:</legend>
               <ul>
