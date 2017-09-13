@@ -151,7 +151,7 @@ a {
     height:18px;
     margin-left:-100px;
     text-align:center;
-    z-index:1000;
+    z-index:10;
 }
 
 .slider-controls i{
@@ -593,28 +593,33 @@ td {
 
 .contact-us {
   position: fixed;
-  top: 120px;
-  /*left: 50%;*/
-
+  left: calc(50% - 480px);
+  top: 20%;
   margin-left: auto;
   margin-right: auto;
-  padding: 70px 100px;
-
   width: 960px;
   font-size: 16px;
   font-family: 'Roboto', 'Arial', sans-serif;
   background-color: #ffffff;
-
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
-.contact-us fieldset {
-  margin: 0;
-  padding: 0;
-  border-style: none;
+
+.contact-us form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 70px 100px;
+  z-index: 12;
 }
-.contact-us b {
-  padding-top: 72px;
+
+.contact-us p {
+  padding: 0;
+  margin: 0;
   font-size: 45px;
+  font-weight: 500;
+}
+.form-title{
+  flex-basis: 100%;
 }
 .contact-us label {
   font-size: 16px;
@@ -623,6 +628,7 @@ td {
 }
 
 .half-width {
+  flex-basis: 360px;
   margin-top: 46px;
   margin-bottom: 35px;
 }
@@ -636,9 +642,13 @@ td {
   color: #a2a2a2;
 }
 
+.text-letter {
+  flex-basis: 100%;
+}
 .text-letter textarea {
   box-sizing: border-box;
   margin-top: 12px;
+  margin-bottom: 47px;
   width: 760px;
   height: 119px;
   padding: 15px;
