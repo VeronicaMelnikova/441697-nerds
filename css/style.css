@@ -596,6 +596,7 @@ td {
   height: 590px;
   font-size: 16px;
   font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: #ffffff;
   box-shadow: ;
 }
 .contact-us b {
@@ -737,13 +738,15 @@ td {
   top: -5px;
   width: 26px;
   height: 26px;
-  background-image: url("../img/radio-off.svg");
+  background-image: url("../img/radio-off-1.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor:pointer;
 }
 
-.radiobuttons label:hover::before {}
+.radiobuttons label:hover::before {
+  background-image: url("../img/radio-off.svg");
+}
 
 .checkbox label::before {
   content: "";
@@ -757,6 +760,22 @@ td {
   background-position: 0 0;
   cursor:pointer;
 }
+
+.checkbox label::after {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -5px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor:pointer;
+}
+
+input[type=checkbox]:checked + label::before {display: none;}
+input[type=checkbox]:checked + label::after {display: block;}
 
 .filter-button {
   display:inline-block;
@@ -921,7 +940,7 @@ a.arrow {
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
-  background-color: #db575a;
+  background-color: #fb565a;
   color: #ffffff;
 }
 .button-price:hover {
