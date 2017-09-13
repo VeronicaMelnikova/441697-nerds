@@ -57,13 +57,13 @@
             <fieldset>
             <legend>Сетка:</legend>
               <ul class="radiobuttons">
-                <li><input class="filter-input filter-input-radio" type="radio" id="adaptive" name="net" value="adaptive">
+                <li><input class="filter-input filter-input-radio" type="radio" id="adaptive" name="net" value="adaptive" checked>
                   <label for="adaptive">Адаптивная</label>
                 </li>
-                <li><input class="filter-input filter-input-radio" type="radio" id="fixed" name="net" value="fixed" checked>
+                <li><input class="filter-input filter-input-radio" type="radio" id="fixed" name="net" value="fixed">
                   <label for="fixed">Фиксированная</label>
                 </li>
-                <li><input class="filter-input filter-input-radio" type="radio" id="rubber" name="net" value="rubber">
+                <li><input class="filter-input filter-input-radio" type="radio" id="rubber" name="net" value="rubber" disabled>
                   <label for="rubber">Резиновая</label>
                 </li>
               </ul>
@@ -213,20 +213,20 @@
     <section class="contact-us hidden">
       <h3 class="visually-hidden">Форма обратной связи</h3>
       <form method="post" action="/echo">
-        <fieldset>
-          <legend><b>Напишите нам</b></legend>
+          <p class="form-title">Напишите нам</p>
 
           <div class="half-width">
             <label for="name">Ваше имя:</label>
               <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="half-width">
             <label for="e-mail">Ваш e-mail:</label>
               <input type="email" id="e-mail" name="e-mail"placeholder="Для отправки ответа" required>
           </div>
           <div class="text-letter">
-            <label for="message">Текст письма:</label><br>
+            <label for="message">Текст письма:</label>
                 <textarea id="message" rows="3">В свободной форме</textarea>
           </div>
-        </fieldset>
 
         <div class="button-send">
               <input type="submit" value="Отправить">
@@ -234,6 +234,6 @@
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
-    
+
   </body>
 </html>
