@@ -1,15 +1,10 @@
 var map = document.querySelector(".interactive-map");
-
-
 var link = document.querySelector(".button-write-us");
-
 var popup = document.querySelector(".contact-us");
 var close = popup.querySelector(".modal-close");
-
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=user-name]");
 var email = popup.querySelector("[name=user-email]");
-
 var storage = localStorage.getItem("login");
 
 link.addEventListener("click", function (evt) {
