@@ -231,15 +231,13 @@ a {
 
 .btn-get-more:hover,
 .button-web:hover,
-.button-write-us:hover,
-.button-send:hover {
+.button-write-us:hover {
   background-color: #e74246;
 }
 
 .btn-get-more:active,
 .button-web:active,
-.button-write-us:active,
-.button-send:active {
+.button-write-us:active {
   color: #e37376;
   background-color: #d7373b;
 }
@@ -750,12 +748,14 @@ td:nth-child(3) {
 }
 
 .half-width input[type="text"]:hover,
-.half-width input[type="email"]:hover {
+.half-width input[type="email"]:hover,
+.text-letter textarea:hover {
   border-color: #b4b9bb;
 }
 
 .half-width input[type="text"]:focus,
-.half-width input[type="email"]:focus {
+.half-width input[type="email"]:focus,
+.text-letter textarea:focus  {
   border-color: #000000;
   color: #000000;
 }
@@ -764,6 +764,15 @@ td:nth-child(3) {
 .half-width input[type="email"]:invalid {
   border-color: #e74246;
   color: #e74246;
+}
+
+.button-send input[type="submit"]:hover {
+  background-color: #e74246;
+}
+
+.button-send input[type="submit"]:focus {
+  color: #e37376;
+  background-color: #d7373b;
 }
 
 .text-letter {
