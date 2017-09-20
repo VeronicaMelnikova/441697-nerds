@@ -231,13 +231,15 @@ a {
 
 .btn-get-more:hover,
 .button-web:hover,
-.button-write-us:hover {
+.button-write-us:hover,
+.button-send:hover {
   background-color: #e74246;
 }
 
 .btn-get-more:active,
 .button-web:active,
-.button-write-us:active {
+.button-write-us:active,
+.button-send:active {
   color: #e37376;
   background-color: #d7373b;
 }
@@ -745,6 +747,23 @@ td:nth-child(3) {
   padding: 15px;
   border: 2px solid #d7dbdd;
   color: #a2a2a2;
+}
+
+.half-width input[type="text"]:hover,
+.half-width input[type="email"]:hover {
+  border-color: #b4b9bb;
+}
+
+.half-width input[type="text"]:focus,
+.half-width input[type="email"]:focus {
+  border-color: #000000;
+  color: #000000;
+}
+
+.half-width input[type="text"]:invalid,
+.half-width input[type="email"]:invalid {
+  border-color: #e74246;
+  color: #e74246;
 }
 
 .text-letter {
