@@ -98,8 +98,8 @@
               <a href="#">По цене</a>
               <a href="#">По типу</a>
               <a href="#">По названию</a>
-              <a href="#" class="arrow arrow-down"></a>
-              <a href="#" class="arrow arrow-up"></a>
+              <a href="#" class="arrow arrow-down">По убыванию</a>
+              <a href="#" class="arrow arrow-up">По возрастанию</a>
             </div>
           </section>
         <ul class="catalog-list">
@@ -163,8 +163,9 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
-      <div class="map">
+
+      <div class="map interactive-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d999.2893479710516!2d30.321425625656133!3d59.93913280434214!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sus!4v1505902462509" width="100%" height="418" frameborder="0" style="border:0" allowfullscreen></iframe>
         <section class="contacts">
           <h3>Nerds Design Studio</h3>
           <p>
@@ -177,6 +178,7 @@
           <a href="form.html" class="button-write-us">Напишите нам</a>
         </section>
       </div>
+      <div class="container">
       <div class="social">
           <a class="vk-button" href="#"></a>
           <a class="fb-button" href="#"></a>
@@ -188,17 +190,17 @@
       </div>
       </div>
     </footer>
-    <section class="contact-us hidden">
+    <section class="contact-us">
       <h3 class="visually-hidden">Форма обратной связи</h3>
       <form method="post" action="/echo">
           <p class="form-title">Напишите нам</p>
           <div class="half-width">
-            <label for="name">Ваше имя:</label>
-              <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+            <label for="user-name">Ваше имя:</label>
+              <input type="text" id="user-name" name="user-name" placeholder="Представьтесь, пожалуйста">
           </div>
           <div class="half-width">
-            <label for="e-mail">Ваш e-mail:</label>
-              <input type="email" id="e-mail" name="e-mail" placeholder="Для отправки ответа" required>
+            <label for="user-email">Ваш e-mail:</label>
+              <input type="email" id="user-email" name="user-email" placeholder="Для отправки ответа" required>
           </div>
           <div class="text-letter">
             <label for="message">Текст письма:</label>
@@ -210,5 +212,6 @@
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
