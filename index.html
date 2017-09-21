@@ -4,50 +4,50 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-      <nav class="main-navigation">
-        <div class="main-logo">
-          <img src="img/logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
+        <nav class="main-navigation">
+          <div class="main-logo">
+            <img src="img/logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
+          </div>
+          <div class="site-navigation">
+            <a href="studio.html">Студия</a>
+            <a href="customers.html">Клиенты</a>
+            <a href="catalog.html">Магазин</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+          <div class="basket-navigation">
+            <a class="basket-link" href="basket.html">Корзина</a>
+          </div>
+        </nav>
+        <div class="slider">
+          <div class="slider-controls">
+            <i class="active"></i>
+            <i></i>
+            <i></i>
+          </div>
+          <section class="slide slide1 slide-active">
+            <h2 class="slogan">Долго, дорого,<br>скрупулезно.</h2>
+            <p class="slogan-description">Математически выверенный дизайн<br>
+            для вашего сайта или мобильного приложения.</p>
+            <p><a href="#" class="button btn-get-more">Узнать больше</a></p>
+          </section>
+          <section class="slide slide2">
+            <h2 class="slogan">Любим математику <br>как никто другой</h2>
+            <p class="slogan-description">Никакого креатива, только математические формулы для расчета пропорций.</p>
+            <p><a href="#" class="button btn-get-more">Узнать больше</a></p>
+          </section>
+          <section class="slide slide3">
+            <h2 class="slogan">Только ночь, <br>только хардкор</h2>
+            <p class="slogan-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <p><a href="#" class="button btn-get-more">Узнать больше</a></p>
+          </section>
         </div>
-        <div class="site-navigation">
-          <a href="studio.html">Студия</a>
-          <a href="customers.html">Клиенты</a>
-          <a href="catalog.html">Магазин</a>
-          <a href="contacts.html">Контакты</a>
-        </div>
-        <div class="basket-navigation">
-          <a class="basket-link" href="basket.html">Корзина</a>
-        </div>
-      </nav>
-      <div class="slider">
-        <div class="slider-controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
-        </div>
-      <section class="slide slide1 slide-active">
-        <h2 class="slogan">Долго, дорого,<br>скрупулезно.</h2>
-        <p class="slogan-description">Математически выверенный дизайн<br>
-        для вашего сайта или мобильного приложения.</p>
-        <p><a href="#" class="button btn-get-more">Узнать больше</a></p>
-      </section>
-      <section class="slide slide2">
-        <h2 class="slogan">Любим математику <br>как никто другой</h2>
-        <p class="slogan-description">Никакого креатива, только математические формулы для расчета пропорций.</p>
-        <p><a href="#" class="button btn-get-more">Узнать больше</a></p>
-      </section>
-      <section class="slide slide3">
-        <h2 class="slogan">Только ночь, <br>только хардкор</h2>
-        <p class="slogan-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <p><a href="#" class="button btn-get-more">Узнать больше</a></p>
-      </section>
-    </div>
-    </div>
+      </div>
     </header>
     <main class="page-content">
       <div class="container">
@@ -77,33 +77,33 @@
         </section>
         <section class="about-nerds">
           <h2 class="visually-hidden">О студии «Нёрдс»</h2>
-            <div class="left-column">
-              <b>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</b>
-              <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
-              <h3>Выполняем заказы на разработку:</h3>
-              <ul class="servises-details">
-                <li>Веб-сайтов любой сложности</li>
-                <li>Мобильных приложений для iOS и Android</li>
-                <li>Слайдшоу и видео для корпоративных презентаций</li>
-              </ul>
-            </div>
-            <div class="right-column index-right-column">
-              <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип студии «Нёрдс»">
-              <h3 class="data">С 2004 года любим точность во всем:</h3>
-              <table>
-                <caption class="visually-hidden">Точные данные</caption>
-                <tr>
-                  <td class="value-percent"><b>146</b><sup>%</sup></td>
-                  <td class="value-percent"><b>100</b><sup>%</sup></td>
-                  <td class="value-percent"><b>50</b><sup>%</sup></td>
-                </tr>
-                <tr>
-                  <td class="value-text">Уровень самоотдачи</td>
-                  <td class="value-text">Соблюдение сроков</td>
-                  <td class="value-text">Минимальная предоплата</td>
-                </tr>
-              </table>
-            </div>
+          <div class="left-column">
+            <b>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</b>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <h3>Выполняем заказы на разработку:</h3>
+            <ul class="servises-details">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="right-column index-right-column">
+            <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип студии «Нёрдс»">
+            <h3 class="data">С 2004 года любим точность во всем:</h3>
+            <table>
+              <caption class="visually-hidden">Точные данные</caption>
+              <tr>
+                <td class="value-percent"><b>146</b><sup>%</sup></td>
+                <td class="value-percent"><b>100</b><sup>%</sup></td>
+                <td class="value-percent"><b>50</b><sup>%</sup></td>
+              </tr>
+              <tr>
+                <td class="value-text">Уровень самоотдачи</td>
+                <td class="value-text">Соблюдение сроков</td>
+                <td class="value-text">Минимальная предоплата</td>
+              </tr>
+            </table>
+          </div>
         </section>
         <section class="project-gallery">
           <a class="html-academy" href="https://htmlacademy.ru/"></a>
@@ -114,9 +114,9 @@
       </div>
     </main>
     <footer class="main-footer">
-        <div class="map interactive-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d999.2893479710516!2d30.321425625656133!3d59.93913280434214!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sus!4v1505902462509" allowfullscreen></iframe>
-          <div class="container">
+      <div class="map interactive-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d999.2893479710516!2d30.321425625656133!3d59.93913280434214!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sus!4v1505902462509" allowfullscreen></iframe>
+        <div class="container">
           <section class="contacts">
             <h3>Nerds Design Studio</h3>
             <p>
@@ -128,19 +128,19 @@
             </p>
             <a href="form.html" class="button-write-us">Напишите нам</a>
           </section>
+        </div>
+      </div>
+      <div class="container">
+        <div class="social">
+          <a class="vk-button" href="#">Вконтакте</a>
+          <a class="fb-button" href="#">Фейсбук</a>
+          <a class="insta-button" href="#">Инстаграм</a>
+          <div class="social-info">
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>
-        <div class="container">
-          <div class="social">
-            <a class="vk-button" href="#">Вконтакте</a>
-            <a class="fb-button" href="#">Фейсбук</a>
-            <a class="insta-button" href="#">Инстаграм</a>
-            <div class="social-info">
-              <b>Давайте дружить, это выгодно!</b>
-              <p>Скидка 10% для друзей из социальных сетей.</p>
-            </div>
-          </div>
-        </div>
+      </div>
     </footer>
       <section class="contact-us">
         <h3 class="visually-hidden">Форма обратной связи</h3>

@@ -27,6 +27,7 @@ a {
   background-color: rgb(237,237,237);
   font-family: 'Roboto', 'Arial', sans-serif;
 }
+
 .main-logo {
   display: flex;
   margin-right: 200px;
@@ -632,13 +633,13 @@ td:nth-child(3) {
 
 .vk-button:hover,
 .fb-button:hover,
-.insta-button:hover  {
+.insta-button:hover {
   background-image: url("../img/red-circle1.svg");
 }
 
 .vk-button:active,
 .fb-button:active,
-.insta-button:active  {
+.insta-button:active {
   background-image: url("../img/red-circle2.svg");
 }
 
@@ -705,9 +706,25 @@ td:nth-child(3) {
 
 .modal-show {
   display: block;
+  animation-name: popup-show;
+  animation-duration: 1s;
 }
 
-.contact-us form{
+@keyframes popup-show {
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  50% {
+    transform: translateX(100px);
+  }
+  
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.contact-us form {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -948,7 +965,7 @@ td:nth-child(3) {
   font-weight: 500;
 }
 
-.price-controls .price-label{
+.price-controls .price-label {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -1143,11 +1160,11 @@ input[type=checkbox]:checked + label::after {
   color: #000000;
 }
 
-.sort-type{
+.sort-type {
   width: 360px;
 }
 
-.sort-type a{
+.sort-type a {
   margin-left: 20px;
 }
 
@@ -1203,7 +1220,7 @@ a .arrow {
   list-style: none;
 }
 
-.catalog-item-name{
+.catalog-item-name {
   margin: 0 auto 20px auto;
   font-size: 18px;
   font-weight: 500;
